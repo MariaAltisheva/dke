@@ -1,6 +1,8 @@
 import io
-import sqlite3
 import streamlit as st
+import pandas as pd
+import numpy as np
+import sqlite3 as lite
 
 st.title('Интернет-магазин продуктов')
 
