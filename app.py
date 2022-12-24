@@ -1,4 +1,5 @@
 import io
+import sqlite3
 import streamlit as st
 
 st.title('Интернет-магазин продуктов')
