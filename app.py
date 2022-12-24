@@ -20,8 +20,8 @@ def read_sqlite_table():
     cur = conn.cursor()
 
     def get_posts():
-        cur.execute("SELECT * FROM Заказ_клиента")
-        print(cur.fetchall())
+        # cur.execute("SELECT * FROM Заказ_клиента")
+        # print(cur.fetchall())
         df = pd.read_sql_query("SELECT * FROM Заказ_клиента", conn)
         st.table(data=df)
 
