@@ -31,7 +31,7 @@ import streamlit as st
 
 
 try:
-    sqlite_connection = sqlite3.connect('db.sqlite3')
+    sqlite_connection = sqlite3.connect('./db.sqlite3')
     cursor = sqlite_connection.cursor()
 except sqlite3.Error as error:
     print("Ошибка при подключении к sqlite", error)
