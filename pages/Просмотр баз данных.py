@@ -10,8 +10,8 @@ def read_sqlite_table_clients():
     cur = conn.cursor()
 
     def get_posts():
-        cur.execute("SELECT count(*) as client_count from Клиент")
-        print(cur.fetchall())
+        # cur.execute("SELECT count(*) as client_count from Клиент")
+        # print(cur.fetchall())
         df = pd.read_sql_query("SELECT count(*) as client_count from Клиент", conn)
         st.table(data=df)
 
