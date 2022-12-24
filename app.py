@@ -3,6 +3,7 @@ import streamlit as st
 
 st.title('Интернет-магазин продуктов')
 
+st.sidebar.title('Выберите нужную опцию')
 
 st.button('Просмотр баз данных')
 st.button('Создать заказ клиента')
